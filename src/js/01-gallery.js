@@ -1,10 +1,10 @@
 import { galleryItems } from './gallery-items.js';
 
 // Change code below this line
-import SimpleLightbox from 'simplelightbox';
+// import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-// console.log(galleryItems);
+console.log(galleryItems);
 
 const imgList = document.querySelector(`.gallery`);
 
