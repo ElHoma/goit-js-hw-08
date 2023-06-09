@@ -37,4 +37,8 @@ formEL.addEventListener(`submit`, event => {
   };
 
   console.log(dataObj);
+
+  localStorage.removeItem('feedback-form-state');
+  emailEl.value = '';
+  messageEl.value = '';
 });
