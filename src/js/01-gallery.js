@@ -24,25 +24,11 @@ galleryItems.forEach(function (item) {
   </a>
 </li>`;
 
-  const elem = document.createElement('li');
-  elem.innerHTML = template;
-  imgList.appendChild(elem);
+  imgList.innerHTML += template;
 });
 
-function gallAnimation(event) {
-  event.preventDefault();
-
-  if (event.target.nodeName !== 'IMG') {
-    return;
-  }
-
-  var lightbox = new SimpleLightbox('.gallery a', {
-    captions: true,
-    captionsData: `alt`,
-    captionDelay: 250,
-  });
-
-  instance.show();
-}
-
-imgList.addEventListener(`click`, gallAnimation);
+var lightbox = new SimpleLightbox('.gallery a', {
+  captions: true,
+  captionsData: `alt`,
+  captionDelay: 250,
+});
